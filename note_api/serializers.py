@@ -48,3 +48,4 @@ class SnippetSerializer(serializers.ModelSerializer):
         rep = super().to_representation(instance)
         rep['tag'] = TagSerializer(instance.tag).data
         return rep
+        

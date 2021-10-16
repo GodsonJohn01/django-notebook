@@ -16,3 +16,4 @@ urlpatterns = [
     path('snippets/create/', views.SnippetCreate.as_view()),
     path('snippets/<int:pk>/', views.SnippetRetrieveUpdateDestroy.as_view()),
 ]
+

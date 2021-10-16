@@ -85,3 +85,4 @@ def login(request):
         else:
             return JsonResponse({'error': 'Invalid username or password'})
     return JsonResponse({'error': 'Method not allowed or Invalid credentials'})
+    
