@@ -68,6 +68,8 @@ def signup(request):
             return JsonResponse({'message': 'Sign up successfull'})
         except:
             return JsonResponse({'error': 'Oops! That\'s not a valid username or password!'})
+    else:
+        return JsonResponse({'error': 'Method not allowed or credentials not provided'})
 
 
 @csrf_exempt
@@ -77,7 +79,6 @@ def login(request):
     """
     if request.method == 'POST':
         data = JSONParser().parse(request)
-        print(data)
         user = authenticate(
             request, username=data['username'], password=data['password'])
         if user is not None:
