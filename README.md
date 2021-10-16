@@ -32,10 +32,11 @@ Steps to set up the project locally:
 
 10. Now, Go to http://127.0.0.1:8000/api/token/ to get your access and refresh token. Resend the request to get new tokens. Note down the `tokens`.
 
-11. Go to `Authorization -> Bearer Token` and give the `access token`.
+11. Open new tab and go to `Authorization -> Bearer Token` and give there the `access token`.
+    This `access token` should be replaced with the new one created using refresh token once it got expired.
 
-12. Go to: http://127.0.0.1:8000/api/token/refresh/.
-    Go to Body and provide key as `refresh` and value as the `refresh token` you got now.
+12. To create new access token, go to: http://127.0.0.1:8000/api/token/refresh/.
+    Go to `Body->form-data` and provide key as `refresh` and value as the `refresh token` you got before.
     You can send the new request to get your new `access token` once the existing access token got expired.
 
 13. Go to http://127.0.0.1:8000/api/snippets/create/ to create a new snippet.
