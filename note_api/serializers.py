@@ -12,7 +12,7 @@ class TagSerializer(serializers.ModelSerializer):
         fields = ['title']
 
 
-class SnippetListSerializer(serializers.ModelSerializer):
+class SnippetOverViewSerializer(serializers.ModelSerializer):
     """
     Serializer for getting the list of snippet title
     """

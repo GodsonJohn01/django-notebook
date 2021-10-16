@@ -12,7 +12,7 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view()),
 
     #snippets
-    path('snippets/', views.SnippetList.as_view()),
+    path('snippets/', views.SnippetOverView.as_view()),
     path('snippets/create/', views.SnippetCreate.as_view()),
     path('snippets/<int:pk>/', views.SnippetRetrieveUpdateDestroy.as_view()),
 ]
