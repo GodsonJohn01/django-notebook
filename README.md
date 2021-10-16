@@ -50,7 +50,7 @@ Steps to set up the project locally:
 
     Change the method to `DELETE` and send the request to delete the Snippet.
 
-14. Hurray! By now, you've worked with the API for a simple notebook using `Django REST Framework`!
+14. Hurray! By now, you've worked with the API for a simple notebook using `Django REST Framework`
 
 <hr>
 
