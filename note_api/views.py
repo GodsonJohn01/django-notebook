@@ -5,15 +5,15 @@ from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
 from django.contrib.auth import authenticate
 
-from .serializers import SnippetSerializer, SnippetCreateSerializer, SnippetListSerializer
+from .serializers import SnippetSerializer, SnippetCreateSerializer, SnippetOverViewSerializer
 from .models import Snippet, Tag
 
 
-class SnippetList(generics.ListAPIView):
+class SnippetOverView(generics.ListAPIView):
     """
     API to list all snippets
     """
-    serializer_class = SnippetListSerializer
+    serializer_class = SnippetOverViewSerializer
     permission_classes = [permissions.IsAuthenticated]
 
     def get_queryset(self):
