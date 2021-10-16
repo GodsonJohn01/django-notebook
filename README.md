@@ -25,7 +25,7 @@ Steps to set up the project locally:
 
 
 8. To signup, Open `Postman` and go to: http://127.0.0.1:8000/api/signup/
-   Goto `Body -> row -> select type as json`
+   Goto `Body -> raw -> select type as json`
    Give the `username` and `password` in json fromat (eg: {"username": "user-new", "password": "pass@123"}) and send the `POST` request.
 
 9. Go to: http://127.0.0.1:8000/api/login/ with the same credentials and method to login.
@@ -40,8 +40,8 @@ Steps to set up the project locally:
     You can send the new request to get your new `access token` once the existing access token got expired.
 
 13. Go to http://127.0.0.1:8000/api/snippets/create/ to create a new snippet.
-    Goto `Body -> row -> select type as json`
-    Give the title and content in json fromat (eg: {"title": "new-title", "content": "This is the new content!"}) and send the request.
+    Goto `Body -> raw -> select type as json`
+    Give the title and content in json fromat (eg: {"title": "new-title", "content": "This is the new content!"} ) and send the request.
 
 14. Go to http://127.0.0.1:8000/api/snippets/ and choose method as `GET` to see the snippets you've created.
 
@@ -59,5 +59,5 @@ Steps to set up the project locally:
 Issue in running the project?
 
 Install all the specified requirements.<br>
-Please make sure you've used correct method to send the request(eg: `GET/POST/PATCH/DELETE`).<br>
+Please make sure you've used correct method to send the request (eg: `GET/POST/PATCH/DELETE`).<br>
 Kindly follow all the instructions properly and try again. Thanks!<br>
