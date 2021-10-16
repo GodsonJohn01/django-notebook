@@ -24,31 +24,31 @@ Steps to set up the project locally:
    Postman is an API platform for building and using APIs. Go to https://www.postman.com/ to download Postman or to know more about Postman.
 
 
-7. To signup, Open Postman and go to: http://127.0.0.1:8000/api/signup/
-   Goto Body -> row -> select type as json
-   Give the username and password in json fromat (eg: {"username": "user-new", "password": "pass@123"}) and send the POST request.
+7. To signup, Open `Postman` and go to: http://127.0.0.1:8000/api/signup/
+   Goto `Body -> row -> select type as json`
+   Give the `username` and `password` in json fromat (eg: {"username": "user-new", "password": "pass@123"}) and send the `POST` request.
 
 8. Go to: http://127.0.0.1:8000/api/login/ with the same credentials and method to login.
 
-9. Now, Go to http://127.0.0.1:8000/api/token/ to get your access and refresh token. Resend the request to get new tokens. Note down the tokens.
+9. Now, Go to http://127.0.0.1:8000/api/token/ to get your access and refresh token. Resend the request to get new tokens. Note down the `tokens`.
 
-10. Go to Authorization -> Bearer Token and give the access token.
+10. Go to `Authorization -> Bearer Token` and give the `access token`.
 
 10. Go to: http://127.0.0.1:8000/api/token/refresh/.
-    Go to Body and provide key as `refresh` and value as the refresh token you got now.
-    You can send the new request to get your new access token once the existing access token got expired.
+    Go to Body and provide key as `refresh` and value as the `refresh token` you got now.
+    You can send the new request to get your new `access token` once the existing access token got expired.
 
 11. Go to http://127.0.0.1:8000/api/snippets/create/ to create a new snippet.
-    Goto Body -> row -> select type as json
+    Goto `Body -> row -> select type as json`
     Give the title and content in json fromat (eg: {"title": "new-title", "content": "This is the new content!"}) and send the request.
 
-12. Go to http://127.0.0.1:8000/api/snippets/ and choose method as GET to see the snippets you've created.
+12. Go to http://127.0.0.1:8000/api/snippets/ and choose method as `GET` to see the snippets you've created.
 
 13. Note any id of the listed snippets (eg: 1) and go to http://127.0.0.1:8000/api/snippets/1/ (give noted id instead of 1) to view it's detail.
 
-    Now, use the same API and change json data and the method to PATCH to update the content of the snippet.
+    Now, use the same API and change json data and the method to `PATCH` to update the content of the snippet.
 
-    Change the method to DELETE and send the request to delete the Snippet.
+    Change the method to `DELETE` and send the request to delete the Snippet.
 
 14. Hurray! By now, you've worked with the API for a simple notebook using Django REST Framework!
 
@@ -58,5 +58,5 @@ Steps to set up the project locally:
 Issue in running the project?
 
 Install all the specified requirements.
-Please make sure you've used correct method to send the request(eg: GET/POST/PATCH/DELETE).
+Please make sure you've used correct method to send the request(eg: `GET/POST/PATCH/DELETE`).
 Kindly follow all the instructions properly and try again. Thanks!
